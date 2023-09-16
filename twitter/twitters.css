@@ -1,0 +1,350 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+  --main-text-clr: #0f1419;
+  --footer-text-clr: #536471;
+  --twitter-clr: #1d9bf0;
+}
+svg{
+  width: 100px;
+}
+/* .alg{
+  align-items: center;
+  font-weight: 100;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 20%;
+  color: aquamarine;
+  font-size: 69px; */
+/* } */
+.container1{
+  display: flex;
+  float: left;
+  justify-content: space-between;
+  background-image: url(im.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #e5efef;
+  width: 50%;
+  min-height: 75vh;
+}
+.container2{
+  display: flex;
+  float: right;
+  justify-content: space-between;
+  width: 50%;
+  min-height: 75vh;
+}
+/* .container2 text{
+  letter-spacing: 10%;
+} */
+.bg-sec{
+  flex-basis: 50%;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.bg-sec svg{
+  width: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.sign-up{
+  flex-basis: 50%;
+  padding: 2em;
+}
+
+.sign-up .twitter-logo-small svg{
+  fill: var(--twitter-clr);
+  width: 8%;
+}
+.container2 .text{
+  margin-top: 5rem;
+  font-size: large;
+}
+h1{
+  font-size: 4.5vw;
+  font-weight: 900;
+  display: inline-block;
+}
+h3{
+  font-size: 1.8rem;
+  margin-top: 3rem;
+}
+.buttons{
+  width: 18rem;
+  margin-top: 1.5rem;
+}
+.btn{
+  display: inline-block;
+  border: 1px solid rgb(29, 24, 24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(8, 7, 7);
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 1px;
+  width: 75%;
+  border-radius: 2.5rem;
+  font-weight: 1000;
+  transition: all 0.2s;
+  margin: 10px;
+}
+.btn:hover{
+  background-color: #1682d59a;
+}
+.btn span{
+  margin-left: 1px;
+}
+.btn svg{
+  width: 20%;
+}
+.g-btn span{
+  margin: 5px 40px 5px 40px;
+  color: var(--main-text-clr);
+}
+.g-btn:hover{
+  background-color: #ccc;
+}
+.email-btn{
+  background-color: var(--twitter-clr);
+  color: white;
+  font-weight: 600;
+  border: none;
+
+}
+.email-btn:hover{
+  background-color: #168;
+}
+.sign-in-btn{
+  color: var(--twitter-clr);
+  font-weight: 500;
+}
+.sign-up p{
+  font-size: 0.6rem;
+}
+.sign-up p span{
+  color: var(--twitter-clr);
+  cursor: pointer;
+}
+.sign-up p span:hover{
+  text-decoration: underline;
+}
+.sign-up .or{
+  font-size: 1rem;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.sign-up .or::before,
+.sign-up .or::after{
+  content: '';
+  position: absolute;
+  background-color: rgb(233,233, 233);
+  width: 45%;
+  height: 0.01rem;
+  top: 50%;
+  left: 22.5%;
+  transform: translate(-50%,-50%);
+}
+.sign-up .or::after{
+  left: 77.5%;
+}
+.sign-up h4{
+  font-size: 1rem;
+  margin-top: 4rem;
+}
+.sign-in-btn{
+  margin-top:  1.5rem;
+}
+
+footer{
+  width: 98%;
+  margin: 0.8rem auto;
+  text-align: center;
+}
+
+footer p span{
+  display: inline-block;
+  margin: 0 0.2rem;
+  font-size: 0.8rem;
+  color: var(--footer-text-clr);
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+footer p span:hover{
+  text-decoration: underline;
+}
+
+@media(max-width:1000px){
+  .container{
+    flex-direction:column;
+  }
+  .bg-sec{
+    flex-basis: 100%;
+    order: 2;
+    min-height: 50vh;
+  }
+  .sign-up{
+    flex-basis: 100%;
+    order: 1;
+    align-self: center;
+  }
+  .bg-sec svg{
+    width: 200px;
+  }
+  h1{
+    font-size: 4rem;
+  }
+  h1 span{
+    display: block;
+  }
+}
+@media(max-width:455px){
+  .sign-up{
+    padding: 1em;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  h1 span{
+    display: inline-block;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+}
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: sans-serif;
+  }
+  
+  .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    padding: 2.5rem;
+    box-sizing: border-box;
+    border: 1px solid #dadce0;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+
+  }
+  
+  .box h2 {
+    margin: 0px 0 -0.125rem;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    color: #202124;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .box p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .1px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .box .inputBox {
+    position: relative;
+  }
+  
+  .box .inputBox input {
+    width: 93%;
+    padding: 0.625rem 10px;
+    font-size: 1rem;
+    letter-spacing: 0.062rem;
+    margin-bottom: 1.875rem;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 4px;
+    
+  }
+  
+  .box .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: grey;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .box .inputBox input:focus ~ label,
+  .box .inputBox input:valid ~ label,
+  .box .inputBox input:not([value=""]) ~ label {
+    top: -1.125rem;
+    left: 10px;
+    color: #1a73e8;
+    font-size: 0.75rem;
+    background-color: white;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .box .inputBox input:focus {
+    outline: none;
+    border: 2px solid #1a73e8;
+  }
+  .box input[type="submit"] {
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #1a73e8;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 1rem;
+    float: right;
+  }
+  
+  .box input[type="submit"]:hover {
+    background-color: #287ae6;
+    box-shadow: 0 1px 1px 0 rgba(66,133,244,0.45), 0 1px 3px 1px rgba(66,133,244,0.3);
+  }   
+
+.box .inputBox input:focus ~ label,
+        .box .inputBox input:valid ~ label,
+        .box .inputBox input:not([value=""]) ~ label {
+            top: -1.125rem;
+            left: 10px;
+            color: #1a73e8;
+            font-size: 0.75rem;
+            background-color: white;
+            height: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .box .inputBox input:focus {
+            outline: none;
+            border: 2px solid #1a73e8;
+        }
+
+.alg {
+  display: flex;
+  justify-content: ;
+}
